@@ -112,7 +112,7 @@
           <!-- Date -->
           <span class="date-time info">On
             <span class="date">2021-04-18</span>
-            <span class="time">22:54:11</span>
+            <span class="time">22:53:22</span>
           </span>
           
           <!--  Categories  -->
@@ -137,42 +137,42 @@
           <p>I’m very happy to re-create my Blog website in MacBook Pro, start it and I’m on my way……</p>
 <p>Steps:</p>
 <ol>
-<li>Install Node.js and Git, following <a target="_blank" rel="noopener" href="https://hexo.io/docs/setup">https://hexo.io/docs/setup</a>, setup video is very clear and helpful;</li>
-<li>Run command in terminal to check if Node.js and Git installed well:</li>
-</ol>
+<li><p>Install Node.js and Git, following <a target="_blank" rel="noopener" href="https://hexo.io/docs">https://hexo.io/docs</a>, setup video is very clear and helpful;</p>
+</li>
+<li><p>Run command in terminal to check if Node.js and Git installed well:</p>
 <span id="more"></span>
 
-<p>   $ node -v        % v.14.16.0<br>   $ git version    % git version 2.20.1 (Apple Git-117)</p>
-<ol start="3">
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ node -v        % v.14.16.0</span><br><span class="line">$ git version    % git version 2.20.1 (Apple Git-117)</span><br></pre></td></tr></table></figure></li>
 <li><p>Install Hexo: in mac, need to add sudo, and input your pwd</p>
-<p>$ sudo npm install -g hexo-cli  </p>
-<p>get successful response:    % <a href="mailto:&#x68;&#x65;&#120;&#111;&#x2d;&#99;&#x6c;&#105;&#64;&#52;&#46;&#50;&#46;&#48;">&#x68;&#x65;&#120;&#111;&#x2d;&#99;&#x6c;&#105;&#64;&#52;&#46;&#50;&#46;&#48;</a></p>
-<p>Run command: $ hexo -v      % hexo-cli: 4.2.0 …</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g hexo-cli  </span><br></pre></td></tr></table></figure>
+
+<p>Run command <code>hexo -v</code> to check current hexo version:</p>
+<p>get successful response:   % hexo-cli: 4.2.0 …</p>
 </li>
 <li><p>Create a local folder as my local Blog repo:</p>
-<p>$ hexo init MyBlog         % (base) Grace~ grace$<br>$ cd MyBlog                % (base) Grace:MyBlog grace$<br>$ npm install</p>
-</li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init MyBlog         % (base) Grace~ grace$ </span><br><span class="line">$ <span class="built_in">cd</span> MyBlog                % (base) Grace:MyBlog grace$ </span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure></li>
 <li><p>Great! It’s all set! Now start blogging!!</p>
-<p>$ hexo new page ***        % create a folder<br>$ hexo new post “***”      % create a post</p>
-</li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page ***        % create a folder</span><br><span class="line">$ hexo new post <span class="string">&quot;***&quot;</span>      % create a post</span><br></pre></td></tr></table></figure></li>
 <li><p>The post is a markdown file (.md file), use a Editor to edit it</p>
 </li>
-<li><p>Run “Hexo server” to run blog website locally at <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a></p>
+<li><p>Run <code>Hexo server</code> to run blog website locally at <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a></p>
 </li>
 <li><p>Change Theme: download a theme you like (via git clone …), clone it to local repro: MyBlog/themes, then modify the theme’s name in _config.yml, Run:</p>
-<p>$ hexo clean<br>$ hexo generate<br>$ hexo server</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo generate</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
 <p>Then view the updated blog at <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a></p>
 </li>
 <li><p>Deploy your blog website via Github Pages</p>
 <ul>
-<li><p>Install deployer command to deploy hexo blog to Github<br>$ npm install hexo-deployer-git –save</p>
-</li>
-<li><p>In the _config.yml, modify:<br>deploy:<br>type: git<br>repo: <a target="_blank" rel="noopener" href="https://github.com/GraceCS/gracecs.github.io">https://github.com/GraceCS/gracecs.github.io</a><br>branch: master</p>
-</li>
-<li><p>Config your user email and username for Git account:<br>$ git config –global user.email “*****@gmail.com”<br>$ git config –global user.name “GraceCS”</p>
-</li>
-<li><p>Update your blog and deploy it to Github by:<br>$ hexo d -g</p>
-</li>
+<li><p>Install deployer command to deploy hexo blog to Github</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
+<li><p>In the _config.yml, modify:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/GraceCS/gracecs.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></li>
+<li><p>Config your user email and username for Git account:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.email <span class="string">&quot;*****@gmail.com&quot;</span></span><br><span class="line">$ git config --global user.name <span class="string">&quot;GraceCS&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>Update your blog and deploy it to Github by:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure></li>
 </ul>
 <p>Need to verify your username of Github and your password to confirm your identity.<br>When it shows “INFO Deploy done: git”, it tells you it’s all set!<br>You can browse your blog website on-line!</p>
 </li>
