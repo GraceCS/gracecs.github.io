@@ -14,8 +14,6 @@
   <meta property="og:type" content="article" />
   <meta property="og:image" content="http://gracecs.github.io"/>
   
-    <link rel="alternate" href="/atom.xml" title="Do, Just 1 more round" type="application/atom+xml">
-  
   
     <link rel="icon" href="/img/favicon.ico">
   
@@ -36,7 +34,8 @@
   <!-- Google Analytics -->
   
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Do, Just 1 more round" type="application/atom+xml">
+</head>
 
   <body>
     <!-- Page Header -->
@@ -93,6 +92,14 @@
                 </a>
               </li>
             
+              <li>
+                <a href="/atom.xml">
+                  
+                  Rss
+                  
+                </a>
+              </li>
+            
           </ul>
         </div>
       </div>
@@ -112,7 +119,7 @@
           <!-- Date -->
           <span class="date-time info">On
             <span class="date">2021-04-28</span>
-            <span class="time">22:54:06</span>
+            <span class="time">21:21:34</span>
           </span>
           
           <!--  Categories  -->
@@ -149,16 +156,25 @@ This way can't set image size,this is the drawback.
 <img src=graphs.png width="70%" height="70%" />
 </center>
 
-<center>(Image courtesy, William Hamilton COMP551: Graph Representation Learning)</center>
+<center>(Image courtesy, by William Hamilton COMP551: Graph Representation Learning)</center>
 
 
 <p>&nbsp;<br>These are some real-life examples of networks. Even though they have different semantic meanings, all of them can be represented by a GRAPH.</p>
-<p>So… a <strong>graph</strong> has three key elements: nodes, edges and weighting function.</p>
+<p>So… a <strong>graph</strong> has <strong>three key elements</strong>: nodes, edges and weighting function.</p>
 <center>
 <img src=Graph_example.png width="80%" height="80%" />
 </center>
 
-<p>The weighting function is used for generating weighted edge value between pairwise nodes based on feature similarity.</p>
+<p>Based on feature similarity, edges are built between pairwise nodes, which can be unweighted or weighted value. In the unweighted case, edges are equal to 1 if two nodes are connected, otherwise edge = 0. In the weighted case, we use a weighting function to produce a weighted edge value between pairwise nodes. Gaussian (heat) kernel is a simple but effective fuction commonly used.</p>
+<p>With these three key elements, we consider two aspects to construct a graph:</p>
+<p>1). <strong>Similarity metric</strong>:</p>
+<pre><code>Euclidean distance and Spectral angle distance are two popular metric used in many research. The definition is as follows, respectively:
+</code></pre>
+<p>2). <strong>Graph creation method</strong>:</p>
+<pre><code>Graph creation method is used to decide which edges to keep, then we assign appropriate weights to the connected edges via a weighting function. $$E_0=mc^2$$
+
+$$\epsilon$$
+</code></pre>
 <ul>
 <li><h4 id="How-to-create-a-graph-to-model-your-data…"><a href="#How-to-create-a-graph-to-model-your-data…" class="headerlink" title="How to create a graph to model your data…"></a><strong>How to create a graph to model your data…</strong></h4></li>
 </ul>

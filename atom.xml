@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Do, Just 1 more round</title>
+  <icon>http://gracecs.github.io/icon.png</icon>
+  <subtitle>KEEP Fighting！</subtitle>
+  <link href="http://gracecs.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://gracecs.github.io/"/>
+  <updated>2021-05-17T01:17:57.000Z</updated>
+  <id>http://gracecs.github.io/</id>
+  
+  <author>
+    <name>Grace</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>\Data Structure\ BASICs in Python</title>
+    <link href="http://gracecs.github.io/2021/05/16/Data-Structure-BASICs-in-Python/"/>
+    <id>http://gracecs.github.io/2021/05/16/Data-Structure-BASICs-in-Python/</id>
+    <published>2021-05-17T01:15:35.000Z</published>
+    <updated>2021-05-17T01:17:57.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;It is important for us to understand the efficiency of those basic Python data structures (string, list, tuple, dictionary, …) because they are the &lt;strong&gt;building blocks&lt;/strong&gt; we will use as we implement other advanced data structures.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Data structure" scheme="http://gracecs.github.io/categories/Data-structure/"/>
+    
+    
+    <category term="Python" scheme="http://gracecs.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>/Data structures/ Tree in Python</title>
+    <link href="http://gracecs.github.io/2021/05/14/:Data%20structures:%20Tree%20in%20Python/"/>
+    <id>http://gracecs.github.io/2021/05/14/:Data%20structures:%20Tree%20in%20Python/</id>
+    <published>2021-05-15T02:49:02.000Z</published>
+    <updated>2021-05-17T01:13:50.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Review the basic data structures implemented in Python, which includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Queue&lt;/li&gt;
+&lt;li&gt;Stack  ……&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Data structure" scheme="http://gracecs.github.io/categories/Data-structure/"/>
+    
+    
+    <category term="Python" scheme="http://gracecs.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyTorch Learning Notes</title>
+    <link href="http://gracecs.github.io/2021/05/12/PyTorch-Learning-Notes/"/>
+    <id>http://gracecs.github.io/2021/05/12/PyTorch-Learning-Notes/</id>
+    <published>2021-05-12T21:51:44.000Z</published>
+    <updated>2021-05-13T13:49:06.653Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;PyTorch is an open-source Python library for deep learning developed by Facebook AI Research (FAIR). The installation is very simple, as instructed in &lt;a href=&quot;https://pytorch.org/get-started/locally/&quot;&gt;Installation&lt;/a&gt;. TorchVision is a powerful package consists of popular datasets, model architectures, and common image transformations for computer vision.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="PyTorch" scheme="http://gracecs.github.io/categories/PyTorch/"/>
+    
+    
+    <category term="DL Framework" scheme="http://gracecs.github.io/tags/DL-Framework/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Use Schrodinger Eigenmaps for Target Detection</title>
+    <link href="http://gracecs.github.io/2021/04/28/Use-Schrodinger-Eigenmaps-for-Target-Detection/"/>
+    <id>http://gracecs.github.io/2021/04/28/Use-Schrodinger-Eigenmaps-for-Target-Detection/</id>
+    <published>2021-04-28T20:31:32.000Z</published>
+    <updated>2021-04-28T20:37:31.424Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Schrodinger Eigenmaps is built upon Laplacian Eigenmaps, which can be applied for target detection scenario.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Graph Theory" scheme="http://gracecs.github.io/categories/Graph-Theory/"/>
+    
+    
+    <category term="Research" scheme="http://gracecs.github.io/tags/Research/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Graph Construction</title>
+    <link href="http://gracecs.github.io/2021/04/28/Graph-Construction/"/>
+    <id>http://gracecs.github.io/2021/04/28/Graph-Construction/</id>
+    <published>2021-04-28T19:32:32.000Z</published>
+    <updated>2021-05-10T21:36:32.770Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;Graph theory&lt;/strong&gt; is an interesting topic and a powerful tool for tackling non-Euclidean data, such as social networks, molecular structures, telecommunication networks, and traffic networks. These kind of data are of unregular non-grid structure, which can be represented more effectively by graph.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Graph Theory" scheme="http://gracecs.github.io/categories/Graph-Theory/"/>
+    
+    
+    <category term="Research" scheme="http://gracecs.github.io/tags/Research/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Build My Hexo Blog in MacBook Pro</title>
+    <link href="http://gracecs.github.io/2021/04/18/Build-My-Hexo-in-Macpro/"/>
+    <id>http://gracecs.github.io/2021/04/18/Build-My-Hexo-in-Macpro/</id>
+    <published>2021-04-19T01:53:49.000Z</published>
+    <updated>2021-04-23T03:46:57.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;I’m very happy to re-create my Blog website in MacBook Pro, start it and I’m on my way……&lt;/p&gt;
+&lt;p&gt;Steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Install Node.js and Git, following &lt;a href=&quot;https://hexo.io/docs&quot;&gt;https://hexo.io/docs&lt;/a&gt;, setup video is very clear and helpful;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Run command in terminal to check if Node.js and Git installed well:&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="http://gracecs.github.io/categories/Hexo/"/>
+    
+    
+    <category term="Mixed" scheme="http://gracecs.github.io/tags/Mixed/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>到达Rochester,NY</title>
+    <link href="http://gracecs.github.io/2019/08/11/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/%E5%88%B0%E8%BE%BERochester,NY/"/>
+    <id>http://gracecs.github.io/2019/08/11/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/%E5%88%B0%E8%BE%BERochester,NY/</id>
+    <published>2019-08-11T15:07:41.000Z</published>
+    <updated>2021-04-20T02:23:01.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;耐得住寂寞，才能开得出花，有音乐流淌在耳边，有阳光从右边窗外暖暖的洒进来，宁静的生活让我一下有种梦幻的感觉，窗外是恬静的美式田园…&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="心情随笔" scheme="http://gracecs.github.io/categories/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="ِ感悟" scheme="http://gracecs.github.io/tags/%D9%90%E6%84%9F%E6%82%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>即将远行</title>
+    <link href="http://gracecs.github.io/2019/07/13/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/%E5%8D%B3%E5%B0%86%E8%BF%9C%E8%A1%8C/"/>
+    <id>http://gracecs.github.io/2019/07/13/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/%E5%8D%B3%E5%B0%86%E8%BF%9C%E8%A1%8C/</id>
+    <published>2019-07-14T03:30:34.000Z</published>
+    <updated>2021-04-20T02:26:21.436Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;今天是7月13日，很开心我的Blog解决了中文乱码的问题，开始写中文的心情随笔，伴着即将启程的远行，为自己加油，为家人祝福…!&lt;/p&gt;
+&lt;p&gt;我们都要坚强，生活中苦真的多于甜，但是阳光却总多于阴雨，心的明亮能点亮一切希望，为了新的明天，加油 ~ &lt;em&gt;KEEP Fighting!&lt;/em&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="心情随笔" scheme="http://gracecs.github.io/categories/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="感悟" scheme="http://gracecs.github.io/tags/%E6%84%9F%E6%82%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>About me</title>
+    <link href="http://gracecs.github.io/2019/04/29/about%20me/"/>
+    <id>http://gracecs.github.io/2019/04/29/about%20me/</id>
+    <published>2019-04-29T13:09:11.000Z</published>
+    <updated>2021-04-20T02:43:59.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;I’m &lt;strong&gt;Grace Cao&lt;/strong&gt;, a Ph.D. student at the &lt;strong&gt;Chester F. Carlson Center for Imaging Science&lt;/strong&gt; of &lt;strong&gt;Rochester Institute of Technology (RIT)&lt;/strong&gt;. &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="About me" scheme="http://gracecs.github.io/categories/About-me/"/>
+    
+    
+    <category term="Mixed" scheme="http://gracecs.github.io/tags/Mixed/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>My Hexo Blog Website (Initiation)</title>
+    <link href="http://gracecs.github.io/2019/04/26/My-Hexo-Website/"/>
+    <id>http://gracecs.github.io/2019/04/26/My-Hexo-Website/</id>
+    <published>2019-04-26T23:39:15.000Z</published>
+    <updated>2021-04-20T01:58:35.144Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;It`s Cool!&lt;/strong&gt; Build my Blog Website powered by Hexo, Github Pages, deeply supported by Node.js and Git!&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="http://gracecs.github.io/categories/Hexo/"/>
+    
+    
+    <category term="Mixed" scheme="http://gracecs.github.io/tags/Mixed/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://gracecs.github.io/2019/04/25/hello-world/"/>
+    <id>http://gracecs.github.io/2019/04/25/hello-world/</id>
+    <published>2019-04-25T14:50:36.000Z</published>
+    <updated>2021-04-20T02:51:05.706Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="http://gracecs.github.io/categories/Hexo/"/>
+    
+    
+    <category term="Mixed" scheme="http://gracecs.github.io/tags/Mixed/"/>
+    
+  </entry>
+  
+</feed>
