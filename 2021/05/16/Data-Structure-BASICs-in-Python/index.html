@@ -119,7 +119,7 @@
           <!-- Date -->
           <span class="date-time info">On
             <span class="date">2021-05-16</span>
-            <span class="time">21:22:11</span>
+            <span class="time">11:25:53</span>
           </span>
           
           <!--  Categories  -->
@@ -143,6 +143,82 @@
         <div class="post-content">
           <p>It is important for us to understand the efficiency of those basic Python data structures (string, list, tuple, dictionary, …) because they are the <strong>building blocks</strong> we will use as we implement other advanced data structures.</p>
 <span id="more"></span>
+
+<ul>
+<li><p><strong>List</strong></p>
+<p>Considering the time efficiency of creat a list. Use list(range(100)) is faster than list comprehension, than append, and much faster than concatenation.</p>
+<center>
+<img src=BigO_list.png width="37%" height="37%" />
+</center></li>
+<li><p><strong>Dictionary</strong></p>
+<p>Contains “in” operator for lists is 𝑂(𝑛) and the contains operator for dictionaries is 𝑂(1).</p>
+<center>
+<img src=BigO_dict.png width="33%" height="33%" />
+</center></li>
+</ul>
+<p><strong>ADT: Abstract Data Type</strong></p>
+<ul>
+<li><p><strong>stack, queue, deque, and list</strong></p>
+<p>Stacks, queues, deques, and lists are examples of data collections whose items are ordered depending on how they are added or removed.</p>
+<ul>
+<li><strong>Stack</strong>: LIFO, last-in first-out</li>
+</ul>
+<p>For stack, the order that they are removed is exactly the reverse of the order that they were placed. So … <strong>stacks are fundamentally important, as they can be used to reverse the order of items</strong>. </p>
+<p>Items are added to and removed <strong>from one end called the ‘top’</strong></p>
+<p>[Implementation]: Use a list to implement a stack, the end of the list will hold the top element of the stack. </p>
+<center>
+<img src=Example_stack.png width="60%" height="60%" />
+</center>
+
+<p><strong>[Application]: Balanced Parentheses?</strong></p>
+<p>Stack is a proper data structure to solve this problem. The code is as belows:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">def par_checker(symbol_string):</span><br><span class="line">  </span><br><span class="line">  s &#x3D; Stack()</span><br><span class="line">  balanced &#x3D; True</span><br><span class="line">  index &#x3D; 0</span><br><span class="line">  while index &lt; len(symbol_string) and balanced:</span><br><span class="line">      </span><br><span class="line">      symbol &#x3D; symbol_string[index]</span><br><span class="line">      if symbol &#x3D;&#x3D; &quot;(&quot;:</span><br><span class="line">          s.push(symbol)</span><br><span class="line">      else:</span><br><span class="line">          if s.is_empty():</span><br><span class="line">              balanced &#x3D; False</span><br><span class="line">          else:</span><br><span class="line">              s.pop()</span><br><span class="line">              </span><br><span class="line">      index &#x3D; index + 1</span><br><span class="line"></span><br><span class="line">  if balanced and s.is_empty():</span><br><span class="line">      return True</span><br><span class="line">  else:</span><br><span class="line">      return False</span><br><span class="line"></span><br><span class="line">print(par_checker(&#39;((()))&#39;))</span><br><span class="line">print(par_checker(&#39;)((()))(&#39;))</span><br></pre></td></tr></table></figure>
+<p>Stacks are very important data structures for the processing of language constructs in computer science.</p>
+<ul>
+<li><strong>Queue</strong>: FIFO, first-in first-out</li>
+</ul>
+<p>A queue is an ordered collection of items where the addition of new items happens at one end, called the “rear,” and the removal of existing items occurs at the other end, commonly called the “front”.  </p>
+<p>Items are added to and removed <strong>from two ends called the “rear” (add items) and “front” (remove items)</strong>.</p>
+<p>[<strong>Implementation</strong>]: Use a list to implement a queue, and we need to decide which end of the list to use as the rear and which to use as the front. This means that <strong>enqueue will be 𝑂(𝑛) and dequeue will be 𝑂(1)</strong>.</p>
+<center>
+<img src=Example_queue.png width="60%" height="60%" />
+</center>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># A implementation of a queue ADT</span><br><span class="line">class Queue:</span><br><span class="line">  def __init__(self):</span><br><span class="line">    self.items &#x3D; []</span><br><span class="line">  def is_empty(self):</span><br><span class="line">    return self.items &#x3D;&#x3D; []</span><br><span class="line">  def enqueue(self, item):</span><br><span class="line">    self.items.insert(0,item)</span><br><span class="line">  def dequeue(self):</span><br><span class="line">    return self.items.pop()</span><br><span class="line">  def size(self):</span><br><span class="line">    return len(self.items)</span><br></pre></td></tr></table></figure>
+
+<p><strong>[Application]: Hot potato</strong></p>
+<ul>
+<li><strong>Deque</strong>: a double-ended queue, two ends, a front and a rear. New items can be added/removed at either the front or the rear. Combine the capabilities of stacks and queues. Don’t require LIFO and FIFO orderings, it’s up to you to make a consistant use of the addition and removal operations. </li>
+</ul>
+<center>
+<img src=Example_deque.png width="60%" height="60%" />
+</center>
+
+<p><strong>[Application]: Palindrome Checker</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">class Deque:</span><br><span class="line">  def __init__(self):</span><br><span class="line">      </span><br><span class="line">      self.items &#x3D; []</span><br><span class="line">      </span><br><span class="line">  def is_empty(self):</span><br><span class="line">      return self.items &#x3D;&#x3D; []</span><br><span class="line">  </span><br><span class="line">  def add_front(self, item):</span><br><span class="line">      self.items.append(item)</span><br><span class="line">      </span><br><span class="line">  def add_rear(self, item):</span><br><span class="line">      self.items.insert(0,item)</span><br><span class="line">  </span><br><span class="line">  def remove_front(self):</span><br><span class="line">      return self.items.pop()</span><br><span class="line">  </span><br><span class="line">  def remove_rear(self):</span><br><span class="line">      return self.items.pop(0)</span><br><span class="line">  </span><br><span class="line">  def size(self):</span><br><span class="line">      return len(self.items)</span><br><span class="line"></span><br><span class="line"># Palindrome Checker</span><br><span class="line">def pal_checker(a_string):</span><br><span class="line">  char_deque &#x3D; Deque()</span><br><span class="line">  </span><br><span class="line">  for ch in a_string:</span><br><span class="line">      char_deque.add_rear(ch)</span><br><span class="line">      </span><br><span class="line">  still_equal &#x3D; True</span><br><span class="line">  </span><br><span class="line">  while char_deque.size() &gt; 1 and still_equal:</span><br><span class="line">      first &#x3D; char_deque.remove_front()</span><br><span class="line">      last &#x3D; char_deque.remove_rear()</span><br><span class="line">      if first !&#x3D; last:</span><br><span class="line">          still_equal &#x3D; False</span><br><span class="line">  return still_equal</span><br><span class="line"></span><br><span class="line">print(pal_checker(&quot;firstf&quot;))</span><br><span class="line">print(pal_checker(&quot;radar&quot;))</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>Unordered List: using Linked Lists to implement</strong></li>
+</ul>
+<p>We need to be sure that we can maintain the relative positioning of the items. However, there is no requirement that we maintain that positioning in contiguous memory. — Linked Lists</p>
+<p>The basic building block for the linked list is the <strong>node</strong>, which must contain two pieces of information:</p>
+<ul>
+<li>data field: the list item itself</li>
+<li>reference: reference to the next node</li>
+</ul>
+<center>
+<img src=Linked_list.png width="30%" height="30%" />
+</center>
+
+<p>The linked list structure provides us with only one entry point, the head of the list. All of the other nodes can only be reached by accessing the first node and then following next links.</p>
+<center>
+<img src=Example_linkedlist.png width="30%" height="30%" />
+</center>
+
+<p>  <strong>Notice</strong>: the first item (31) added to the list will eventually be the last node on the linked list as every other item is added ahead of it.</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class UnorderedList:</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.head &#x3D; None</span><br><span class="line"></span><br><span class="line">    def is_empty(self):</span><br><span class="line">        return self.head &#x3D;&#x3D; None</span><br><span class="line"></span><br><span class="line">    # add a new node</span><br><span class="line">    def add(self,item):</span><br><span class="line">        temp &#x3D; Node(item)</span><br><span class="line">        temp.set_next(self.head)</span><br><span class="line">        self.head &#x3D; temp</span><br><span class="line"></span><br><span class="line">    # </span><br></pre></td></tr></table></figure></li>
+</ul>
+
         </div>
       </div>
     </div>

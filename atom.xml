@@ -6,7 +6,7 @@
   <link href="http://gracecs.github.io/atom.xml" rel="self"/>
   
   <link href="http://gracecs.github.io/"/>
-  <updated>2021-05-17T01:17:57.000Z</updated>
+  <updated>2021-07-03T15:24:03.936Z</updated>
   <id>http://gracecs.github.io/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>GCN for HSI classification</title>
+    <link href="http://gracecs.github.io/2021/05/24/GCN-for-HSI-classification/"/>
+    <id>http://gracecs.github.io/2021/05/24/GCN-for-HSI-classification/</id>
+    <published>2021-05-24T04:08:39.000Z</published>
+    <updated>2021-07-03T15:24:03.936Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;GCN is Graph Convolutional Network, a newly developed deep learning framework combining the advantages of traditional CNN and graph-based representation learning. &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Graph theory" scheme="http://gracecs.github.io/categories/Graph-theory/"/>
+    
+    
+    <category term="Research" scheme="http://gracecs.github.io/tags/Research/"/>
+    
+  </entry>
+  
+  <entry>
     <title>\Data Structure\ BASICs in Python</title>
     <link href="http://gracecs.github.io/2021/05/16/Data-Structure-BASICs-in-Python/"/>
     <id>http://gracecs.github.io/2021/05/16/Data-Structure-BASICs-in-Python/</id>
     <published>2021-05-17T01:15:35.000Z</published>
-    <updated>2021-05-17T01:17:57.000Z</updated>
+    <updated>2021-07-03T15:24:52.332Z</updated>
     
     
     <summary type="html">&lt;p&gt;It is important for us to understand the efficiency of those basic Python data structures (string, list, tuple, dictionary, …) because they are the &lt;strong&gt;building blocks&lt;/strong&gt; we will use as we implement other advanced data structures.&lt;/p&gt;</summary>
@@ -40,7 +59,7 @@
     <link href="http://gracecs.github.io/2021/05/14/:Data%20structures:%20Tree%20in%20Python/"/>
     <id>http://gracecs.github.io/2021/05/14/:Data%20structures:%20Tree%20in%20Python/</id>
     <published>2021-05-15T02:49:02.000Z</published>
-    <updated>2021-05-17T01:13:50.000Z</updated>
+    <updated>2021-05-29T02:35:57.415Z</updated>
     
     
     <summary type="html">&lt;p&gt;Review the basic data structures implemented in Python, which includes:&lt;/p&gt;
@@ -63,7 +82,7 @@
     <link href="http://gracecs.github.io/2021/05/12/PyTorch-Learning-Notes/"/>
     <id>http://gracecs.github.io/2021/05/12/PyTorch-Learning-Notes/</id>
     <published>2021-05-12T21:51:44.000Z</published>
-    <updated>2021-05-13T13:49:06.653Z</updated>
+    <updated>2021-05-17T04:46:18.155Z</updated>
     
     
     <summary type="html">&lt;p&gt;PyTorch is an open-source Python library for deep learning developed by Facebook AI Research (FAIR). The installation is very simple, as instructed in &lt;a href=&quot;https://pytorch.org/get-started/locally/&quot;&gt;Installation&lt;/a&gt;. TorchVision is a powerful package consists of popular datasets, model architectures, and common image transformations for computer vision.&lt;/p&gt;</summary>
