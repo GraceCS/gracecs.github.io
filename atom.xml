@@ -6,7 +6,7 @@
   <link href="http://gracecs.github.io/atom.xml" rel="self"/>
   
   <link href="http://gracecs.github.io/"/>
-  <updated>2021-07-03T15:24:03.936Z</updated>
+  <updated>2021-07-03T15:31:59.536Z</updated>
   <id>http://gracecs.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>GCN for HSI classification</title>
-    <link href="http://gracecs.github.io/2021/05/24/GCN-for-HSI-classification/"/>
-    <id>http://gracecs.github.io/2021/05/24/GCN-for-HSI-classification/</id>
-    <published>2021-05-24T04:08:39.000Z</published>
-    <updated>2021-07-03T15:24:03.936Z</updated>
+    <link href="http://gracecs.github.io/2021/07/02/GCN-for-HSI-classification/"/>
+    <id>http://gracecs.github.io/2021/07/02/GCN-for-HSI-classification/</id>
+    <published>2021-07-02T19:08:39.000Z</published>
+    <updated>2021-07-03T15:31:59.536Z</updated>
     
     
     <summary type="html">&lt;p&gt;GCN is Graph Convolutional Network, a newly developed deep learning framework combining the advantages of traditional CNN and graph-based representation learning. &lt;/p&gt;</summary>
